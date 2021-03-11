@@ -8,14 +8,14 @@ import { StackNavigator } from "./stack";
 
 const DrawerNavigator = createDrawerNavigator(
   {
-    Welcome: {
-      screen: StackNavigator,
-    },
-    // Home: {
-    //   screen: Home,
+    // First: {
+    //   screen: StackNavigator,
     // },
     Home: {
       screen: Home,
+    },
+    Welcome: {
+      screen: Welcome,
     },
   },
   {
