@@ -2,13 +2,11 @@ import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import Route from "./navigations/stack";
-import Drawer from "./navigations/drawer";
 
 export default function App() {
   return (
     <>
       <Route />
-      {/* <Drawer /> */}
     </>
   );
 }

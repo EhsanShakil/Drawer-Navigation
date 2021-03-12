@@ -1,7 +1,6 @@
 import React from "react";
 import { View, Text, Dimensions, TouchableOpacity } from "react-native";
 import { AntDesign, Fontisto } from "@expo/vector-icons";
-import { StatusBar } from "expo-status-bar";
 import { DrawerActions } from "react-navigation-drawer";
 
 const ScreenWidth = Dimensions.get("window").width;
@@ -17,7 +16,9 @@ const Header = ({ navigation }) => {
         marginHorizontal: 5,
       }}
     >
-      <TouchableOpacity onPress={() => navigation.openDrawer()}>
+      <TouchableOpacity
+        onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
+      >
         <AntDesign name="bars" size={ScreenWidth * 0.1} color="black" />
       </TouchableOpacity>
       <Text style={{ fontSize: ScreenWidth * 0.09 }}>Coupons</Text>
