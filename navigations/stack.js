@@ -1,11 +1,25 @@
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
+import { createDrawerNavigator } from "react-navigation-drawer";
 import Home from "../screens/home/Home";
 import Welcome from "../screens/welcome/Welcome";
 import Header from "../components/Header";
-import Drawer from "./drawer";
 
-export const StackNavigator = createStackNavigator({
+const DrawerNavigator = createDrawerNavigator({
+  Welcome: {
+    screen: Welcome,
+  },
+  Home: {
+    screen: Home,
+  },
+});
+const StackNavigator = createStackNavigator({
+  DrawerNavigator: {
+    screen: DrawerNavigator,
+    navigationOptions: {
+      header: Header,
+    },
+  },
   Welcome: {
     screen: Welcome,
     navigationOptions: {
@@ -19,4 +33,5 @@ export const StackNavigator = createStackNavigator({
     },
   },
 });
-// export default createAppContainer(StackNavigator);
+
+export default createAppContainer(StackNavigator);

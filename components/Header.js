@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, Dimensions, TouchableOpacity } from "react-native";
 import { AntDesign, Fontisto } from "@expo/vector-icons";
 import { StatusBar } from "expo-status-bar";
+import { DrawerActions } from "react-navigation-drawer";
 
 const ScreenWidth = Dimensions.get("window").width;
 const ScreenHeight = Dimensions.get("window").height;

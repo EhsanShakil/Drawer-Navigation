@@ -7,8 +7,8 @@ import Drawer from "./navigations/drawer";
 export default function App() {
   return (
     <>
-      {/* <Route /> */}
-      <Drawer />
+      <Route />
+      {/* <Drawer /> */}
     </>
   );
 }

@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import { StatusBar } from "expo-status-bar";
 import Search from "../../components/Search";
 // import { DrawerActions } from "react-navigation-drawer";
+import { DrawerActions } from "react-navigation-drawer";
 
 const Welcome = ({ navigation }) => {
   return (
