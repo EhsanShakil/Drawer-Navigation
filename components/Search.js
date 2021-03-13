@@ -16,7 +16,7 @@ const Search = () => {
       style={{
         justifyContent: "center",
         alignItems: "center",
-        marginVertical: 20,
+        marginVertical: 10,
       }}
     >
       <TextInput
