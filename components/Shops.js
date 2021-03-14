@@ -2,27 +2,27 @@ import React, { useState } from "react";
 import { View, Text, SafeAreaView } from "react-native";
 import Carousel from "react-native-snap-carousel";
 
-const Brands = () => {
+const Shops = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const carouselItems = [
     {
-      title: "Brand 1",
+      title: "Shop 1",
       text: "Description",
     },
     {
-      title: "Brand 2",
+      title: "Shop 2",
       text: "Description",
     },
     {
-      title: "Brand 3",
+      title: "Shop 3",
       text: "Description",
     },
     {
-      title: "Brand 4",
+      title: "Shop 4",
       text: "Description",
     },
     {
-      title: "Brand 5",
+      title: "Shop 5",
       text: "Description",
     },
   ];
@@ -31,8 +31,8 @@ const Brands = () => {
       <View
         style={{
           backgroundColor: "black",
-          borderTopLeftRadius: 50,
-          borderBottomRightRadius: 50,
+          borderTopRightRadius: 50,
+          borderBottomLeftRadius: 50,
           height: 250,
           padding: 50,
           marginLeft: 25,
@@ -47,7 +47,7 @@ const Brands = () => {
   return (
     <View style={{ flex: 1 }}>
       <Text style={{ fontSize: 22, textAlign: "center", marginVertical: 10 }}>
-        BRANDS
+        SHOPS
       </Text>
       <SafeAreaView>
         <View
@@ -73,4 +73,4 @@ const Brands = () => {
   );
 };
 
-export default Brands;
+export default Shops;
