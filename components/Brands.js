@@ -59,7 +59,6 @@ const Brands = () => {
         >
           <Carousel
             layout={"default"}
-            layoutCardOffset={`9`}
             ref={(ref) => (carousel = ref)}
             data={carouselItems}
             sliderWidth={350}

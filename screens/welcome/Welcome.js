@@ -15,7 +15,7 @@ import Carousel from "react-native-snap-carousel";
 import Brands from "../../components/Brands";
 import Shops from "../../components/Shops";
 
-const Welcome = ({ navigation }) => {
+const Welcome = () => {
   return (
     <>
       {/* <StatusBar /> */}
