@@ -21,25 +21,32 @@ const DrawerNavigator = createDrawerNavigator(
     overlayColor: "black",
   }
 );
-const StackNavigator = createStackNavigator({
-  DrawerNavigator: {
-    screen: DrawerNavigator,
-    navigationOptions: {
-      header: Header,
+const StackNavigator = createStackNavigator(
+  {
+    DrawerNavigator: {
+      screen: DrawerNavigator,
+      navigationOptions: {
+        headerShown: false,
+      },
+    },
+    Welcome: {
+      screen: Welcome,
+      navigationOptions: {
+        headerShown: false,
+      },
+    },
+    Home: {
+      screen: Home,
+      navigationOptions: {
+        headerShown: false,
+      },
     },
   },
-  Welcome: {
-    screen: Welcome,
+  {
     navigationOptions: {
-      header: Header,
+      headerShown: false,
     },
-  },
-  Home: {
-    screen: Home,
-    navigationOptions: {
-      header: Header,
-    },
-  },
-});
+  }
+);
 
 export default createAppContainer(StackNavigator);
